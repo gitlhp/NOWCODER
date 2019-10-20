@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * @ClassName: Code3
- * @Description: 从头到尾打印链表
+ * @Description: 倒着打印链表
  * @Author: lhp
  * @Date: 2019/10/20 20:52
  * @Version: V1.0
