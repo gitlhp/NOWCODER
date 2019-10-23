@@ -27,7 +27,7 @@ public class Code4 {
         }
         //首先根据先序遍历建立根节点
         TreeNode root = new TreeNode(pre[0]);
-        //确定根节点在中序遍历系列中的位置
+        //确定根节点在中序遍历系列中的位置 利用中序序列
         for (int i = 0; i < in.length; i++) {
             if (pre[0] == in[i]) {
                 //创建左子树
