@@ -10,9 +10,9 @@ import java.util.Arrays;
  * @Version: V1.0
  **/
 class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+    int val = 0;
+    TreeNode left = null;
+    TreeNode right = null;
 
     TreeNode(int x) {
         this.val = x;
@@ -44,9 +44,10 @@ public class Code4 {
         }
         return root;
     }
+
     //先序检验
-    private void pre(TreeNode node){
-        if (node==null) {
+    private void pre(TreeNode node) {
+        if (node == null) {
             return;
         }
         System.out.println(node.val);
