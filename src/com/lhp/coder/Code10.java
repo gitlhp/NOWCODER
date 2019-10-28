@@ -22,7 +22,7 @@ public class Code10 {
             //从end开始，也就是从最右边开始找比基准数小的数
             while (arr[high] > target && low < high) {
                 high--;//向左走
-            }
+        }
             //找到则填坑
             if (low < high) {
                 arr[low] = arr[high];
