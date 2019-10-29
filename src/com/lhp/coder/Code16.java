@@ -20,15 +20,15 @@ public class Code16 {
         }
         ArrayList<Integer> list = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root);
+        queue.offer(root);
         while (!queue.isEmpty()){
             TreeNode node = queue.poll();
             list.add(node.val);
             if (node.left!=null){
-                queue.add(root.left);
+                queue.offer(node.left);
             }
             if (root.right!=null){
-                queue.add(root.right);
+                queue.offer(node.right);
             }
         }
         return list;
