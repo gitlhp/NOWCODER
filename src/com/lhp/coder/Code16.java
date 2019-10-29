@@ -15,19 +15,19 @@ import java.util.Queue;
 
 public class Code16 {
     public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
-        if (root==null) {
-            return null;
+        ArrayList<Integer> list=new ArrayList<>();
+        Queue<TreeNode> queue= new LinkedList<>();
+        if (root!=null){
+            queue.offer(root);
         }
-        ArrayList<Integer> list = new ArrayList<>();
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
+        //队列不为空，执行循环
         while (!queue.isEmpty()){
-            TreeNode node = queue.poll();
+            TreeNode node=queue.poll();
             list.add(node.val);
             if (node.left!=null){
                 queue.offer(node.left);
             }
-            if (root.right!=null){
+            if(node.right!=null){
                 queue.offer(node.right);
             }
         }
