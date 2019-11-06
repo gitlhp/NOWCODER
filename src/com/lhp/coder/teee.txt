@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 12345676543dddddd2fas
 >>>>>>> refs/remotes/origin/devbjut
+=======
+56789
+>>>>>>> ff971e0bcfbd7e2637e57126cf8c1b006f091b82
